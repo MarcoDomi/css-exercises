@@ -1,5 +1,6 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  
 }
 
 img {
@@ -7,10 +8,33 @@ img {
   height: 100px;
 }
 
+body {/*body selector not used in original solution*/
+  text-align: center; /*not used in my original solution */
+}
+
 .title {
   font-size: 36px;
   font-weight: 900;
+  /*text-align: center; 
+  text-align used in original solution but was moved to body selector*/
+  margin-bottom: 32px;
 }
+
+.item-container {
+  display: flex;
+  gap: 52px;
+  justify-content: center;
+}
+
+.items {
+  /*used flex-basis: 200px in my solution*/
+  max-width: 200px;
+}
+
+.text {
+  text-wrap: wrap; /*not needed but keeping anyway lol*/
+}
+
 
 /* do not edit this footer */
 .footer {
