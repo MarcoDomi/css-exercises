@@ -5,10 +5,16 @@ html {
 }
 
 .container {
+  --row-size: 95px;
+  --column-size: 365px;
   text-align: center;
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  display: grid;
+  gap: 15px;
+  grid-template-rows: var(--row-size) var(--row-size) calc(5 * var(--row-size)) var(--row-size);
+  grid-template-columns: var(--column-size) calc(3*var(--column-size));
 }
 
 .container div {
@@ -22,10 +28,12 @@ html {
 
 .header {
   background-color: #006157;
+  grid-column: 1 / span 2;
 }
 
 .sidebar {
   background-color: #005B94;
+  grid-row: 2 / 4;
 }
 
 .nav {
@@ -38,6 +46,7 @@ html {
 
 .footer {
   background-color: #393f4d;
+  grid-column: 1 / span 2;
 }
 
 .article p {
